@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gameplay_bakcground"
+    tools:context="com.orb.solveit.About">
+
+    <TextView
+        android:shadowDx="4"
+        android:shadowColor="@android:color/black"
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/title"
+        android:text="About"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="38sp" />
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/avatar"
+        android:layout_below="@id/titleView"
+        android:id="@+id/dev_image"
+        android:layout_width="160dp"
+        android:layout_height="160dp" />
+    <TextView
+        android:id="@+id/dev_name"
+        android:layout_below="@id/dev_image"
+        android:textColor="@android:color/white"
+        android:text="Ohidur Rahman Bappy"
+        android:textSize="22sp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:fontFamily="sans-serif-condensed"
+        android:id="@+id/dev_edu"
+        android:layout_below="@id/dev_name"
+        android:textColor="@android:color/white"
+        android:text="Department of EEE, BSMRSTU"
+        android:textSize="22sp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/dev_web"
+        android:layout_below="@id/dev_edu"
+        android:textColor="#1028fa"
+        android:text="http://www.bappy.cf"
+        android:textSize="22sp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_margin="12dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:id="@+id/social_container"
+        android:layout_below="@id/dev_web"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_margin="8dp"
+            android:id="@+id/fb_llink"
+            android:background="@drawable/fb_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <ImageView
+            android:layout_margin="8dp"
+            android:id="@+id/twitter_llink"
+            android:background="@drawable/twitter"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

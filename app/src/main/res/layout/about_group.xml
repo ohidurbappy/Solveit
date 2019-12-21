@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gameplay_bakcground"
+    tools:context="com.orb.solveit.About">
+
+    <TextView
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/title"
+        android:shadowColor="@android:color/black"
+        android:shadowDx="4"
+        android:text="About"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="38sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dev_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Developed By"
+            android:textColor="@android:color/white"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/dev_edu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dev_name"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/team_name"
+            android:textColor="@android:color/white"
+            android:textSize="22sp" />
+
+        <TextView
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dev_edu"
+            android:layout_centerHorizontal="true"
+            android:text="Team Members"
+            android:textColor="#1028fa"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:textSize="20sp"
+            android:textColor="#fafafa"
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ohidur Rahman Bappy\nTamim Mahmud\nOmar Faruk" />
+    </LinearLayout>
+
+</RelativeLayout>

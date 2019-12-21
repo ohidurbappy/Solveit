@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gameplay_bakcground"
+    tools:context="com.orb.solveit.Settings">
+
+    <TextView
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/title"
+        android:text="Settings"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="38sp" />
+
+    <TextView
+        android:textAlignment="center"
+        android:padding="8dp"
+        android:id="@+id/bg_music_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleView"
+        android:text="Background Music"
+        android:textColor="@android:color/white"
+        android:textSize="22sp" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:textOff="Off"
+        android:textOn="On"
+        app:thumbTint="@android:color/white"
+        app:trackTint="#66aaffff"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        android:id="@+id/music_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/titleView"
+        android:layout_gravity="right" />
+
+</RelativeLayout>
